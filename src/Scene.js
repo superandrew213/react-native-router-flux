@@ -6,7 +6,8 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { ViewPropTypes, Text } from 'react-native';
 
 export default class extends React.Component {
@@ -22,7 +23,7 @@ export default class extends React.Component {
     tabStyle: ViewPropTypes.style,
     tabTitleStyle: Text.propTypes.style,
     tabSelectedTitleStyle: Text.propTypes.style,
-    tabTitle: PropTypes.string,
+    tabTitle: PropTypes.string
   };
 
   render() {
